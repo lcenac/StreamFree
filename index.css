@@ -73,19 +73,32 @@ margin-left: -85px;
 }
 
 .container img {
-width:100%;
+ width: 1300px;
+ height: 500px;
 }
 
-/* Container holding the image and the text */
+
+
+/* Bottom left text */
+.text-block {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 .container {
   position: relative;
   text-align: center;
   color: white;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+div.container {
+  max-width: 2000px;
+  margin: auto;
+
+}
+
+h4{
+  font-size: 40px;
 }
