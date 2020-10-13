@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>StreamFree</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="" type="image/x-icon" />
-    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>StreamFree</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <title>Font Awesome Icons</title>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    
-   <style> 
-.col {
- 
-  transition: transform .2s;
-  
-  
-}
-
-.container{
-transition: transform .2s;  
-}
-
-
-.col:hover {
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(1.15); /* Safari 3-8 */
-  transform: scale(1.15); 
-opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.container:hover {
-  -ms-transform: scale(1.03); /* IE 9 */
-  -webkit-transform: scale(1.03); /* Safari 3-8 */
-  transform: scale(1.03); 
-
-}
-</style>
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">StreamFree</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="">Movies<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TV Shows</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Genres
-        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Adventure</a>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>StreamFree</title>
+      <link href="index.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+         crossorigin="anonymous">
+      <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/ui-03-basic-2/100/Basic__54-512.png" type="image/x-icon"
+         />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>StreamFree</title>
+      <link href="index.css" rel="stylesheet" type="text/css" />
+      <title>Font Awesome Icons</title>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+      <style>
+         * {
+         box-sizing: border-box;
+         }
+         @media only screen and (max-width:800px) {
+         /* For tablets: */
+         .main {
+         width: 80%;
+         padding: 0;
+         }
+         .right {
+         width: 100%;
+         }
+         }
+         @media only screen and (max-width:500px) {
+         /* For mobile phones: */
+         #carouselExampleFade,
+         .#nav,
+         .hider {
+         width: 100%;
+         }
+         }
+         .col-3 img {
+         transition: transform .5s;
+         border-radius:7px;
+         }
+         .col-3 img:hover {
+         -ms-transform: scale(1.15);
+         /* IE 9 */
+         -webkit-transform: scale(1.15);
+         /* Safari 3-8 */
+         transform: scale(1.15);
+         opacity: 0.5;
+         filter: alpha(opacity=50);
+         /* For IE8 and earlier */
+         border-radius:7px;
+         }
+         .container {
+         transition: transform .5s;
+         }
+         .container:hover {
+         -ms-transform: scale(1.01);
+         /* IE 9 */
+         -webkit-transform: scale(1.01);
+         /* Safari 3-8 */
+         transform: scale(1.01);
+         border-radius:7px;
+         }
+      </style>
+   </head>
+   <body>
+      <section>
+         <nav class="navbar navbar-expand-lg " id="nav">
+            <a class="navbar-brand" href="">StreamFree</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <svg class="bi bi-list" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+               </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item ">
+                     <a class="nav-link" href="">Movies<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Genres
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://streamfree-action--lydiacenac.repl.co/">Action</a>
+                        <a class="dropdown-item" href="https://streamfree-adventure--lydiacenac.repl.co/#" target="_blank">Adventure</a>
                         <a class="dropdown-item" href="#">Animation</a>
                         <a class="dropdown-item" href="#">Comedy</a>
                         <a class="dropdown-item" href="#">Crime</a>
@@ -77,338 +99,889 @@ opacity: 0.5;
                         <a class="dropdown-item" href="#">Documentaries</a>
                         <a class="dropdown-item" href="#">Science Fiction</a>
                         <a class="dropdown-item" href="#">Sports</a>
+                        <a class="dropdown-item" href="#">Historical</a>
                         <a class="dropdown-item" href="#">Horror</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Live Sports</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-
-    </nav>
-
-    <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-sm-8">
-                  <img class="d-block w-100" 
-                    src="https://thebannernews.net/wp-content/uploads/2019/04/avengersendgame-900x601.jpg" height="650" width "500">
-                </div>
-                <div class="col-sm-4"><br>
-                  <h5>Avengers: Endgame</h5><br>
-                  <p> the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face.<br><br>Rating:&nbsp;<i class="fas fa-star"></i> 8.5/10<br><br>Genre: Fantasy/Sci-Fi<br><br>Release Year: 2019<br><br>Duration : 3H 2M<br><br><br><a class="btn " href="https://www.youtube.com/watch?v=TcMBFSGVi1c"  target="_blank"role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp; Watch Trailer</a></p>
-                </div>
-              </div>             
+                        <a class="dropdown-item" href="#">Mystery</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#"  >Live Channels</a>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+               </form>
             </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-8">
-                  <img class="d-block w-100" src="https://m.media-amazon.com/images/M/MV5BMjA2NjMyOTMzMl5BMl5BanBnXkFtZTgwMTc5MDkzNDM@._V1_SX1500_CR0,0,1500,999_AL_.jpg" alt="Second slide" height="650" width "500">
-                </div>
-                <div class="col-sm-4"><br>
-                  <h5>Jumnanji: The Next Level</h5><br>
-                    <p>The gang is back but the game has changed. As they return to rescue one of their own, the players will have to brave parts unknown from arid deserts to snowy mountains, to escape the world's most dangerous game.<br><br>Rating:&nbsp;<i class="fas fa-star"></i> 7/10<br><br>Genre: Fantasy/Action<br><br>Release Year: 2019<br><br>Duration : 2H 3M<br><br><br><a class="btn " href="https://www.youtube.com/watch?v=rBxcF-r9Ibs"  target="_blank"role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp;Watch Trailer</a></p>
-                </div>
-              </div>    
-
+         </nav>
+      </section>
+      <section>
+         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <img class="d-block w-100" src="https://thebannernews.net/wp-content/uploads/2019/04/avengersendgame-900x601.jpg" height="650" width= "100%">
+                     </div>
+                     <div class="col-sm-4">
+                        <br>
+                        <h5>Avengers: Endgame</h5>
+                        <br>
+                        <p> the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face.
+                           <br>
+                           <br>Rating:&nbsp;<i class="fas fa-star"></i> 8.5/10
+                           <br>
+                           <br>Genre: Fantasy/Sci-Fi
+                           <br>
+                           <br>Release Year: 2019
+                           <br>
+                           <br>Duration : 3H 2M
+                           <br>
+                           <br>
+                           <br><a class="btn " href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank" role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp; Watch Trailer</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <img class="d-block w-100" src="https://m.media-amazon.com/images/M/MV5BMjA2NjMyOTMzMl5BMl5BanBnXkFtZTgwMTc5MDkzNDM@._V1_SX1500_CR0,0,1500,999_AL_.jpg" alt="Second slide" height="650" width= "500">
+                     </div>
+                     <div class="col-sm-4">
+                        <br>
+                        <h5>Jumnanji: The Next Level</h5>
+                        <br>
+                        <p>The gang is back but the game has changed. As they return to rescue one of their own, the players will have to brave parts unknown from arid deserts to snowy mountains, to escape the world's most dangerous game.
+                           <br>
+                           <br>Rating:&nbsp;<i class="fas fa-star"></i> 7/10
+                           <br>
+                           <br>Genre: Fantasy/Action
+                           <br>
+                           <br>Release Year: 2019
+                           <br>
+                           <br>Duration : 2H 3M
+                           <br>
+                           <br>
+                           <br><a class="btn " href="https://www.youtube.com/watch?v=rBxcF-r9Ibs" target="_blank" role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp;Watch Trailer</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-8">
+                        <img class="d-block w-100" src="https://media.wired.com/photos/5cb0d08dd424dc2dd3607fcf/master/w_2560%2Cc_limit/Culture_StarWarsSkywalker_Trailer.jpg" alt="Third slide" height="650" width ="500">
+                     </div>
+                     <div class="col-sm-4">
+                        <br>
+                        <h5>Star Wars: The Rise of Skywalker</h5>
+                        <br>
+                        <p>The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences.
+                           <br>
+                           <br>Rating:&nbsp;<i class="fas fa-star"></i> 7/10
+                           <br>
+                           <br>Genre: Fantasy/Sci-Fi
+                           <br>
+                           <br>Release Year: 2019
+                           <br>
+                           <br>Duration : 2H 22M
+                           <br>
+                           <br>
+                           <br><a class="btn " href="https://www.youtube.com/watch?v=14EztMXh5vQ" target="_blank" role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp; Watch Trailer</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-             <div class="carousel-item">
-              <div class="row">
-                <div class="col-sm-8">
-                  <img class="d-block w-100" src="https://media.wired.com/photos/5cb0d08dd424dc2dd3607fcf/master/w_2560%2Cc_limit/Culture_StarWarsSkywalker_Trailer.jpg" alt="Third slide" height="650" width "500">
-                </div>
-                <div class="col-sm-4"><br>
-                  <h5>Star Wars: The Rise of Skywalker</h5><br>
-                    <p>The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences.<br><br>Rating:&nbsp;<i class="fas fa-star"></i> 7/10<br><br>Genre: Fantasy/Sci-Fi<br><br>Release Year: 2019<br><br>Duration : 2H 22M<br><br><br><a class="btn " href="https://www.youtube.com/watch?v=14EztMXh5vQ" target="_blank" role="button"><i class="fas fa-play"id="pbtn1"></i>&nbsp; Watch Trailer</a></p>
-                </div>
-              </div>    
-
+            
+         
+      </section>
+      <section>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <h1></h1>
+         <div class="genre">
+            <div class="row">
+               <div class="col-2" >
+                  <a href="https://streamfree-action--lydiacenac.repl.co/" target="_blank">
+                  <img src="https://www.denofgeek.com/wp-content/uploads/2019/01/spidey-2-6.jpg?resize=768%2C432">
+                  </a>
+                  <a href="https://streamfree-action--lydiacenac.repl.co/" target="_blank">
+                     <div class="centered">Action</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="https://streamfree-adventure--lydiacenac.repl.co/#" target="_blank">
+                  <img src="https://cdn.newsday.com/polopoly_fs/1.13661447.1495656923!/httpImage/image.jpeg_gen/derivatives/landscape_768/image.jpeg">
+                  </a>
+                  <a href="https://streamfree-adventure--lydiacenac.repl.co/#" target="_blank">
+                     <div class="centered">Adventure</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="http://www.sonoma.edu/sites/www/files/field/image/frozen-2-sing-along.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Animation</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://preview.redd.it/o03ix0phps1z.jpg?width=960&crop=smart&auto=webp&s=966006af0dfffac2302ea31b5fbae40d5723ac8c">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Comedy</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://movies-b26f.kxcdn.com/wp-content/uploads/2020/05/4d32b735c9886cbcb6f941ebe36f6ed3a7-19-scarface.rsocial.w1200-770x470.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Crime</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://consequenceofsound.net/wp-content/uploads/2019/07/joker-2019.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Drama</div>
+                  </a>
+               </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://ca-times.brightspotcdn.com/dims4/default/7a0506d/2147483647/strip/true/crop/3840x2076+0+0/resize/840x454!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F68%2F76%2F3c66dcb243bcbcbea7db12b118dc%2Fla-photos-handouts-la-ca-the-elephant-queen-movie-31.JPG">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Documentaries</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://www.syracuse.com/resizer/Yf2JVrK4q4XTk9sKLT21vFE1obw=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/GFIJHAXO7BE3TATMAR4MVYIW3M.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Sci-Fi</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://miro.medium.com/max/1400/1*mGavbwomECGrqH1Dq5Pf-A.jpeg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Sports</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://img.cinemablend.com/filter:scale/quill/e/6/a/d/4/3/e6ad43e56aa4418829b3c4eb4a7ba32a900db034.jpg?mw=600">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Historical</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/Us-behind-the-scenes-700x321.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Horror</div>
+                  </a>
+               </div>
+               <div class="col-2" >
+                  <a href="#">
+                  <img src="https://cdn.collider.com/wp-content/uploads/2009/12/sherlock-holmes-movie-image-3-600x398.jpg">
+                  </a>
+                  <a href="#">
+                     <div class="centered">Mystery</div>
+                  </a>
+               </div>
+               <br>
+               <br>
+               <br>
             </div>
          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+         </section>
+         <br>
+         <br>
+         
+         <h1>New Movies</h1>
+         <br>
+         <div id="carousel-1" class="carousel slide" data-interval="false">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="row">
+                  <div class="col-3" >
+                     <a href="#">
+                     <a href="#">
+                     <img src="https://image.tmdb.org/t/p/w300/tmItDhOFsRgFlxX9VaWJEGfstJV.jpg"height="300" width="200">
+                     </a>
+                     <div class="lec">
+                        <a  class="btn" href="https://jumanjinl.lydiacenac.repl.co/" target="_blank"role="button"><i class="fas fa-play fa-2x"></i></a>
+                        </a>
+                     </div>
+                     <div class="hide">
+                        &nbsp;Jumnanji: The Next Level (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 3M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7/10</h20>
+                        </div>
+                        &nbsp; The gang is back but the game has changed. &nbsp; As they return to rescue one of their own, the &nbsp; players will have to brave parts unknown &nbsp;&nbsp;from arid deserts to snowy mountains, to &nbsp;&nbsp;escape the world's most dangerous game.<br><br>
+                        <div class="wtb">
+                           <a href="https://jumanjinl.lydiacenac.repl.co/"target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-left"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/EJWDEpFXsAMm9gJ-700x1037.jpg"height="300" width="200">
+                     </a>
+                     <a  class="btn" href="https://6-underground--lydiacenac.repl.co/#" role="button" target="_blank"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hide">
+                        &nbsp;6 Underground (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 8M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.1/10</h20>
+                        </div>
+                        &nbsp;         Six individuals from all around the globe,<br>&nbsp;&nbsp;each the very best at what they do, have<br>&nbsp; been chosen not only for their skill, but for a<br> &nbsp;&nbsp;unique desire to delete their pasts to change<br>&nbsp; the future.<br><br>
+                        <div class="wtb">
+                           <a href="https://6-underground--lydiacenac.repl.co/#"target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-left"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" height="300" width="200">
+                     </a>
+                     <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hider">
+                        &nbsp;Joker (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 2M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.5/10</h20>
+                        </div>
+                        &nbsp;         In Gotham City, mentally troubled comedian<br>&nbsp; Arthur Fleck is disregarded and mistreated<br>&nbsp; by society. He then embarks on a downward<br>&nbsp; spiral of revolution and bloody crime. This<br>&nbsp; path brings him face-to-face with his alter-<br>&nbsp; ego: the Joker.<br><br>
+                        <div class="wtb">
+                           <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-right"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://m.media-amazon.com/images/M/MV5BZTllZTdlOGEtZTBmMi00MGQ5LWFjN2MtOGEyZTliNGY1MzFiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" height="300" width="200">
+                     </a>
+                     <a  class="btn" target="_blank"href="https://streamfree-ad-astra--lydiacenac.repl.co/" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hider">
+                        &nbsp;Ad Astra (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 4M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.6/10</h20>
+                        </div>
+                        &nbsp;         Astronaut Roy McBride undertakes a mission across an unforgiving solar system to uncover the truth about his missing father and his doomed expedition that now, 30 years later, threatens the universe.<br><br>
+                        <div class="wtb">
+                           <a href="https://streamfree-ad-astra--lydiacenac.repl.co/"target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-right"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="row">
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://alternativemovieposters.com/wp-content/uploads/2019/05/ching_endgame.jpg" height="300" width="200">
+                     </a>
+                     <a  class="btn" href="#" role="button"></a>
+                     <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hide">
+                        &nbsp;The Avengers: Endgame (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 3M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7/10</h20>
+                        </div>
+                        &nbsp;   After the devastating events of Avengers: &nbsp;&nbsp;Infinity War (2018), the universe is in ruins. &nbsp;With the help of remaining allies, the    &nbsp;Avengers assemble once more in order to 
+                        &nbsp;reverse Thanos' actions and restore balance to &nbsp;the universe.<br><br>
+                        <div class="wtb">
+                           <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-left"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="http://www.sparklyprettybriiiight.com/wp-content/uploads/2019/05/Weekend-movie-poster-art-The-old-and-new-characters-from-Toy-Story-4-pic-2.jpg" height="300" width="200">
+                     </a>
+                     <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hide">
+                        &nbsp;Toy Story 4 (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;1H 40M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7.8/10</h20>
+                        </div>
+                        &nbsp;         When a new toy called "Forky" joins Woody <br>&nbsp;and the gang, a road trip alongside old and <br>&nbsp;new friends reveals how big the world can be<br>&nbsp;for a toy.<br><br>
+                        <div class="wtb">
+                           <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-left"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://cdnb.artstation.com/p/assets/images/images/016/584/107/medium/tyler-wetta-captain-marvel-poster2lowres.jpg?1552685170" height="300" width="200"></a>
+                     <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hider">
+                        &nbsp;Captain Marvel (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;2H 3M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.9/10</h20>
+                        </div>
+                        &nbsp;Carol Danvers becomes one of the universe's<br>&nbsp;most powerful heroes when Earth is caught in <br>&nbsp;the middle of a galactic war between two <br>&nbsp;alien races.<br><br>
+                        <div class="wtb">
+                           <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-right"></div>
+                  </div>
+                  <div class="col-3">
+                     <a href="#">
+                     <img src="https://occ-0-1722-1723.1.nflxso.net/art/775ce/048f6ec99c3d86953902c3b22ae5b0144b2775ce.jpg" height="300" width="200">
+                     </a>
+                     <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                     <div class="hider">
+                        &nbsp;Fyre (2019)
+                        <br>
+                        <div class="st">
+                           &nbsp;
+                           <h20><i class="far fa-clock"></i>&nbsp;1H 37M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7.2/10</h20>
+                        </div>
+                        The Fyre Festival was billed as a luxury music experience on a posh private island, but it failed spectacularly in the hands of a cocky entrepreneur.<br><br>
+                        <div class="wtb">
+                           <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                        </div>
+                     </div>
+                     <div class="triangle-right"></div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            </a>
+            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>New Movies</h1>
-        <br>
-
-
-<div id="carousel-1" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://image.tmdb.org/t/p/w300/tmItDhOFsRgFlxX9VaWJEGfstJV.jpg" height="250" width="150">
-                        
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/EJWDEpFXsAMm9gJ-700x1037.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BZTllZTdlOGEtZTBmMi00MGQ5LWFjN2MtOGEyZTliNGY1MzFiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" height="250" width="150">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjQ2NzE1MjYxMV5BMl5BanBnXkFtZTgwMjM3MDQxNzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>  
-
-    </section><br><br>
-<section>
-    <h1>Available Now</h1>
-    <br>
-
-    <div class="container">
-        <img src="https://images.cdn.superguide.nl/OdH4vyA2y1Gr5Ci-1jy8UDU1YkA=/890x0/smart/superguide.nl/s3fs-public/main_media/sg-expanse-phpsnyeub_1.jpeg" width="500">
-        <div class="text-block">
-            <h4>&nbsp; &nbsp; The   Expanse</h4>
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; <a class="btn " href="" target="_blank" role="button"><i class="fas fa-play"></i>&nbsp; Watch Season 3</a>
-                <br>
-                <br>&nbsp; &nbsp; &nbsp; &nbsp; A police detective in the asteroid belt, the first officer of
-                <br>&nbsp; &nbsp; &nbsp; &nbsp; an interplanetary ice freighter, and an earth-bound
-                <br>&nbsp; &nbsp; &nbsp; &nbsp; United Nations executive slowly discover a vast conspiracy
-                <br>&nbsp; &nbsp; &nbsp; &nbsp; that threatens the Earth's rebellious colony on the asteroid belt.</p>
-
-        </div>
-    </div> 
-    </section>
-    <section>    
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>Popular  Movies</h1>
-        <br>
-<div id="carousel-2" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" height="250" width="150">
-                        
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY190_CR0,0,128,190_AL_.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY190_CR1,0,128,190_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNjM5ZTNiNGMtMDA2OC00MDYyLWEyNzAtOWZmMzFlY2VmOWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>          
+            </a>
       
-
-
-
-    </section>
-   <section>
+      <br><br>
+      </div>
       <br>
-        <br>
-        <br>
-        <h1>Classic  Movies</h1>
-        <br>
-<div id="carousel-3" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,0,182,268_AL_.jpg" height="250" width="150">
-                        
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX128_CR0,0,128,190_AL_.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BYjUyZWZkM2UtMzYxYy00ZmQ3LWFmZTQtOGE2YjBkNjA3YWZlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,0,128,190_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,0,128,190_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
+      <br>
+      <section>
+         <h1>Available Now</h1>
+         <br>
+         <div class="container">
+            <img src="https://2fvqxa3fxpfi2sm7tt1oe5ln-wpengine.netdna-ssl.com/wp-content/uploads/2016/07/Stranger-Things-poster.jpg" width="50%">
+            <div class="text-block">
+               <h4>&nbsp; &nbsp;Stranger Things</h4>
+               <p>&nbsp; &nbsp; &nbsp;  <a class="btn " href="https://Stranger-Things--lydiacenac.repl.co" target="_blank" role="button"><i class="fas fa-play"></i>&nbsp; Watch Season 3</a><br><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Hawkins, Indiana, 1983. A young boy, Will Byers,goes missing near a <br>&nbsp;&nbsp;&nbsp; top-secret government laboratory. ... As friends, family and local police<br>&nbsp;&nbsp;&nbsp; search for answers,they are drawn into an extraordinary mystery involving<br>&nbsp;&nbsp;&nbsp; top-secret government &nbsp;experiments, terrifying supernatural forces and one<br>&nbsp;&nbsp;&nbsp; very strange little girl.
+               </p>
             </div>
-        </div>
-        <div class="carousel-item">
+         </div>
+      </section>
+      <section>
+         <br>
+         <br>
+         <br>
+         <br>
+         <h1>Popular  Movies</h1>
+         <br>
+         <div id="carousel-2" class="carousel slide" data-interval="false">
+         <div class="carousel-inner">
+         <div class="carousel-item active">
             <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="https://m.media-amazon.com/images/M/MV5BNjM5ZTNiNGMtMDA2OC00MDYyLWEyNzAtOWZmMzFlY2VmOWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" height="250" width="150">
-                    </a>
-                </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BOGFjYWNkMTMtMTg1ZC00Y2I4LTg0ZTYtN2ZlMzI4MGQwNzg4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Godzilla: King of the Monsters (2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 12M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6/10</h20>
+                     </div>
+                     &nbsp; The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY190_CR0,0,128,190_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Spider-Man: Far From Home(2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 9M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7.5/10</h20>
+                     </div>
+                     &nbsp;         Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BOTIzYmUyMmEtMWQzNC00YzExLTk3MzYtZTUzYjMyMmRiYzIwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UY190_CR1,0,128,190_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Hobbs & Shaw (2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 16M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.5/10</h20>
+                     </div>
+                     &nbsp;         Lawman Luke Hobbs (Dwayne "The Rock" Johnson) and outcast Deckard Shaw (Jason Statham) form an unlikely alliance when a cyber-genetically enhanced villain threatens the future of humanity.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Venom (2018)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 52M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.7/10</h20>
+                     </div>
+                     &nbsp;         A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth. But the being takes a liking to Earth and decides to protect it.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
             </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
+         </div>
+         <div class="carousel-item">
+            <div class="row">
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Aladdin (2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 8M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7/10</h20>
+                     </div>
+                     &nbsp;         A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_UY209_CR0,0,140,209_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;The Lion King (2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 58M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.9/10</h20>
+                     </div>
+                     &nbsp;         After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_UY209_CR0,0,140,209_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Moana (2016)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 53M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7.6/10</h20>
+                     </div>
+                     &nbsp;Moana, daughter of chief Tui, embarks on a journey to return the heart of goddess Te Fitti from Maui, a demigod, after the plants and the fish on her island start dying due to a blight.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BNjM5ZTNiNGMtMDA2OC00MDYyLWEyNzAtOWZmMzFlY2VmOWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY209_CR0,0,140,209_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Hustlers (2019)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 50M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;6.3/10</h20>
+                     </div>
+                     &nbsp;         Inspired by the viral New York Magazine article, Hustlers follows a crew of savvy former strip club employees who band together to turn the tables on their Wall Street clients.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </section>
+      <section>
+         <br>
+         <br>
+         <br>
+         <h1>Classic  Movies</h1>
+         <br>
+         <div id="carousel-3" class="carousel slide" data-interval="false">
+         <div class="carousel-inner">
+         <div class="carousel-item active">
+            <div class="row">
+               <div class="col-3">
+                  <img src="https://m.media-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,0,182,268_AL_.jpg" height="300" width="200">
+                  <a  class="btn" href="https://video-livestream-demo.lydiacenac.repl.co" target="_blank" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Casablanca (1942)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 42M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.5/10</h20>
+                     </div>
+                     &nbsp;A cynical American expatriate struggles to 
+                     &nbsp;decide whether or not he should help his 
+                     &nbsp;former lover and her fugitive husband escape
+                     &nbsp;French Morocco.<br><br>
+                     <div class="wtb">
+                        <a href="https://video-livestream-demo.lydiacenac.repl.co"target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/back-poster.jpg?itok=AnXzysXp" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="https://back-to-the-future.lydiacenac.repl.co" target="_blank"role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Back To The Future (1985)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 56M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.5/10</h20>
+                     </div>
+                     &nbsp;Marty McFly, a 17-year-old high school &nbsp;student,
+                     is accidentally sent thirty years into &nbsp;the past in a time-traveling DeLorean &nbsp;invented by his close friend, the eccentric &nbsp;scientist Doc Brown. <br><br>
+                     <div class="wtb">
+                        <a href="https://back-to-the-future.lydiacenac.repl.co"target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://www.arthipo.com/image/cache/catalog/genel-tasarim/all-posters/sinema-cinema-film-postersleri/yabanci-filmler/pfilm241-esaretin-bedeli-film-posteri-movie-poster-the-shawshank-redemption_2f7ae7f4-1000x1000.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;The Shawshank Redemption  (1994)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 22M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;9.3/10</h20>
+                     </div>
+                     &nbsp;Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BYjBiOTYxZWItMzdiZi00NjlkLWIzZTYtYmFhZjhiMTljOTdkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,0,128,190_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Citizen Kane (1941)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 59M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.3/10</h20>
+                     </div>
+                     &nbsp;The investigation of a publishing tycoon's dying words reveals conflicting stories about his scandalous life.      <br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <div class="row">
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://img.moviepostershop.com/ghostbusters-movie-poster-1984-1010227494.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Ghostbusters (1984)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;1H 47M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;7.8/10</h20>
+                     </div>
+                     When Peter Venkman, Raymond Stantz and Egon Spengler lose their jobs as parapsychologists, they start an establishment called Ghostbusters to fight the evil ghosts lurking in New York City.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://i.pinimg.com/236x/32/4a/7a/324a7a3ea2a8cc9eec5cdc42baf2831f--scarface-poster-scarface-movie.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hide">
+                     &nbsp;Scarface (1983)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 50M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.3/10</h20>
+                     </div>
+                     &nbsp;Tony Montana and his close friend Manny, build a strong drug empire in Miami. However as his power begins to grow, so does his ego and his enemies, and his own paranoia begins to plague his empire.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-left"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;The Godfather (1972)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 58M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;9.2/10</h20>
+                     </div>
+                     &nbsp;  Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+               <div class="col-3">
+                  <a href="#">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX128_CR0,0,128,190_AL_.jpg" height="300" width="200">
+                  </a>
+                  <a  class="btn" href="#" role="button"><i class="fas fa-play fa-2x"></i></a>
+                  <div class="hider">
+                     &nbsp;Fight Club (1999)
+                     <br>
+                     <div class="st">
+                        &nbsp;
+                        <h20><i class="far fa-clock"></i>&nbsp;2H 31M&nbsp;&nbsp;<i class="fas fa-star"></i>&nbsp;8.8/10</h20>
+                     </div>
+                     &nbsp;  Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.<br><br>
+                     <div class="wtb">
+                        <a href=""target="_blank"><i class="fas fa-play-circle"></i>&nbsp;Watch Now</a>
+                     </div>
+                  </div>
+                  <div class="triangle-right"></div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <section class="footer" id="footer">
+         <!-- Footer -->
+         <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+            <!-- Footer Links -->
+            <div class="container-1 text-center text-md-left">
+               <!-- Grid row -->
+               <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+                     <!-- Content -->
+                     <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+                     <p>Here you can use rows and columns to organize your footer content.</p>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none">
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                     <!-- Links -->
+                     <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <p>
+                              <a href="#!">PROJECTS</a>
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <a href="#!">ABOUT US</a>
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <a href="#!">BLOG</a>
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <a href="#!">AWARDS</a>
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                     <!-- Contact details -->
+                     <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+                     <ul class="list-unstyled">
+                        <li>
+                           <p>
+                              <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <i class="fas fa-envelope mr-3"></i> info@example.com
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                           </p>
+                        </li>
+                        <li>
+                           <p>
+                              <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="clearfix w-100 d-md-none">
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+                     <!-- Social buttons -->
+                     <h5 class="font-weight-bold text-uppercase mb-4">Follow Us!</h5>
+                     <!-- Facebook -->
+                     <a type="button" class="btn-floating btn-fb">
+                     <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <!-- Twitter -->
+                     <a type="button" class="btn-floating btn-tw">
+                     <i class="fab fa-twitter"></i>
+                     </a>
+                     <!-- Google +-->
+                     <a type="button" class="btn-floating btn-gplus">
+                     <i class="fab fa-google-plus-g"></i>
+                     </a>
+                     <!-- Dribbble -->
+                     <a type="button" class="btn-floating btn-dribbble">
+                     <i class="fab fa-instagram"></i>
+                     </a>
+                  </div>
+                  <!-- Grid column -->
+               </div>
+               <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">Developed by Lydia Cenac with <i class="far fa-heart"></i>       during quarantine © 2020 Copyright:
+               <a href=""> StreamFree.com</a>
+            </div>
+            <!-- Copyright -->
+         </footer>
+         <!-- Footer -->
+      </section>
+      <script src="index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
 </html>
