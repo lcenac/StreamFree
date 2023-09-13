@@ -7,5 +7,5 @@ I used this project as a way to learn more about web development. It may look ou
 of bootstrap :)
 
 another edit
-I also didn't know how to properly push to GitHub so I'm currently working on adding everything in.
+I also didn't know how to properly push to GitHub so I'm currently working on adding everything in after I get the website up to date.
 
