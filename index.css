@@ -6,6 +6,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	overflow-x: hidden;
 	background-color: #000011;
+  scroll-behavior: smooth;
 }
 
 .bi-list {
